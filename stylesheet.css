@@ -402,6 +402,7 @@ a.twitter {
     color: var(--black);
     margin-bottom: 2rem;
     padding: 2rem;
+}
 .blogtext{
     margin: 2rem;
 }
@@ -409,7 +410,7 @@ a.twitter {
     font-size: 2rem;
 }
 .blg-p{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .blg-btn{
     padding: 9px 10px ;
