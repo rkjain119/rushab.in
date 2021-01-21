@@ -139,8 +139,10 @@ button {
 }
 
 .cta-btn {
+    
     padding: 12px 25px;
     margin-top: 2rem;
+    margin-right: 2rem;
     background-color: var(--blue);
     border: 1px;
     color: var(--white);
@@ -392,54 +394,30 @@ a.twitter {
     padding-top: 2rem;
 }
 
-.blogsection-title .title {
-    font-size: 40px;
-    text-align: center;
+.list {
+  margin: 10rem 0 0rem 10rem;
+  max-width: 700px;
 }
-
-.single-blog {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 10px;
-    margin-bottom: 2rem;
-    box-shadow: 0 0 11px rgba(117, 78, 249, 1);
-}
-
-.blogsection-title p {
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin-top: 2rem;
+.article-item{
     color: var(--black);
-}
-
-.blogimg {
-    border-radius: 10px;
-    max-width: 100%;
     margin-bottom: 2rem;
+    padding: 2rem;
+.blogtext{
+    margin: 2rem;
 }
-
-.blogs-list {
-    margin-top: 5rem;
-}
-
-.blog-title a {
+.blg-title{
     font-size: 2rem;
-    font-weight: 600;
 }
-
-.blog-content {
-    padding: 1rem;
+.blg-p{
+    font-size: 1.2rem;
 }
-
-/* .blogs-grid {
-	display: flex;
-	justify-content: center;
-} */
-
-
-/* Contact Section */
+.blg-btn{
+    padding: 9px 10px ;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 30px;
+    cursor: pointer;
+}
 
 #contact {
     width: 100%;
@@ -583,17 +561,6 @@ a.twitter {
 
     .single-stack {
         margin-right: 10px;
-    }
-
-    .blogs-list {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-    }
-
-    .single-blog {
-        width: 50%;
-        margin-right: 2rem;
     }
 
     .row-contact {
