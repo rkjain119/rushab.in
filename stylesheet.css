@@ -139,7 +139,7 @@ button {
 }
 
 .cta-btn {
-    
+
     padding: 12px 25px;
     margin-top: 2rem;
     margin-right: 2rem;
@@ -344,7 +344,7 @@ a.twitter {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background:var(--blue);
+    background: var(--blue);
     font-size: 1rem;
     color: #fff;
     box-shadow: -5px -5px 10px #295e74;
@@ -353,21 +353,23 @@ a.twitter {
     border-radius: 10px;
     transition: all 500ms;
     overflow: hidden;
- }
-  
+}
+
 .project-item:hover {
     box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
     transform: translateY(-3px) scale(1.1);
- }
+}
 
- .project-grid {
+.project-grid {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
- }
-.project-title{
+}
+
+.project-title {
     font-size: 1.8rem;
 }
+
 .project-links {
     text-align: center;
     font-size: 1.8rem;
@@ -395,25 +397,30 @@ a.twitter {
 }
 
 .list {
-  margin: 10rem 0 0rem 10rem;
-  max-width: 700px;
+    margin: 10rem 0 0rem 10rem;
+    max-width: 700px;
 }
-.article-item{
+
+.article-item {
     color: var(--black);
     margin-bottom: 2rem;
     padding: 2rem;
 }
-.blogtext{
+
+.blogtext {
     margin: 2rem;
 }
-.blg-title{
+
+.blg-title {
     font-size: 2rem;
 }
-.blg-p{
+
+.blg-p {
     font-size: 1rem;
 }
-.blg-btn{
-    padding: 9px 10px ;
+
+.blg-btn {
+    padding: 9px 10px;
     background-color: var(--blue);
     color: var(--white);
     border-radius: 30px;
