@@ -1,275 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="stylesheet.css" />
-		<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet" />
-		<title>Rushab Jain</title>
-	</head>
 
-	<body>
-		<main>
-			<nav id="navbar">
-				<img class="logo" src="src/logo.png" alt="Rushab Jain" />
-				<ul class="nav-links">
-					<li><a href="/index.html">Home</a></li>
-					<li><a href="projects.html">Projects</a></li>
-					<li><a href="blogs.html">Blogs</a></li>
-					<li>
-						<a class="cta" href="#contact">
-							<button class="nav-btn">Contact</button></a
-						>
-					</li>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Rushab's Portfolio</title>
+	<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;800;900&family=Kanit:wght@800&display=swap"
+		rel="stylesheet" />
+	<!-- Bootstrap Icon-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css" />
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+	<!-- SplideJs Styles -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.1/dist/css/splide.min.css" />
+	<!-- App Styles -->
+	<link rel="stylesheet" href="styles/app.min.css" />
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="animate__animated animate__slideInDown" style="	display: flex;"">
+			<div class=" container">
+			<h1 class="header__logo">
+				<a href="/">&lt;RK/&gt; </a>
+			</h1>
+			<nav class="navigation">
+				<ul>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
-			</nav>
-			<section id="welcome-section" class="home">
-				<div class="hero">
-					<div class="container">
-						<div class="hero-content">
-							<div class="hero-text">
-								<h4>HELLO I'M</h4>
-								<h1>
-									RUSHAB <br />
-									JAIN
-								</h1>
-								<p>
-									Web Developer - Passionate about building Websites & Web Apps.
-								</p>
-								<a class="cta" href="projects.html"
-									><button class="cta-btn">PROJECTS</button></a
-								>
-								<a class="cta" href="blogs.html"
-									><button class="cta-btn">BLOGS</button></a
-								>
-							</div>
-							<div class="hero-img">
-								<img class="hero-imgdata" src="src/hero.svg" alt="" />
-							</div>
-						</div>
+				<!-- <a class="btn btn--main" href="assets/resume.pdf" download>
+						<i class="bi bi-download"></i> Resume
+					</a> -->
+				<a class=" header__resume" href="assets/resume.pdf" download>
+					<span class=" header__bg" href="assets/resume.pdf" download>
+					</span>
+					<span class="header__text"><i class="bi bi-download" style="margin-right: 0.5rem; "></i> Resume</span>
+				</a>
+		</div>
+		<!-- <span class=" button">
+							<span class="button-background"></span>
+							<span class="button-text">Ediz Yurdakul</span>
+					</span> -->
+		</nav>
+
+		<div class="header__mobile">
+			<button id="navigation-button">
+				<i class="bi bi-list"></i>
+			</button>
+		</div>
+		</div>
+		</div>
+	</header>
+
+	<!-- Hero Section -->
+
+	<section class="hero">
+		<div class="container">
+			<div class="hero__wrapper">
+				<h1 class="hero__title animate__animated animate__slideInDown">
+					HELLO I'M RUSHAB JAIN
+				</h1>
+				<p class="hero__content animate__animated animate__slideInDown">
+					A Web Developer based in Mumbai Passionate
+					about building pixel perfect Websites &amp; Web Apps.</p>
+
+				<div class="hero__img" style="background-image: url('assets/curve.png')">
+					<div class="hero__imgCircle animate__animated animate__slideInUp">
+						<img src="https://devfolioio.s3.amazonaws.com/avatars/dmK9b8QJfKk_w9OR1nqW-.jpeg" alt="Profile Avatar">
 					</div>
 				</div>
-			</section>
-			<section id="about">
-				<div class="container">
-					<div class="about">
-						<h2>About Me</h2>
-					</div>
 
-					<div id="about-content">
-						<h5>Hello There! I'm Rushab Jain</h5>
-						<p>
-							A Web Developer based in Mumbai, Maharashtra. I’have a diverse set
-							of skills, ranging from HTML + CSS + JS all the way to firebase
-							and AWS.
-						</p>
-						<ul class="p-details">
-							<li>
-								<div class="wrapper">
-									<div class="box">
-										<div class="single-info">
-											<i class="lni lni-envelope"></i>
-											<p class="p-text">
-												<span>E-mail:</span> rkjain119@gmail[dot]com
-											</p>
-										</div>
-									</div>
-									<div class="box">
-										<div class="single-info">
-											<i class="lni lni-twitter"></i>
-											<p class="p-text">
-												<span>Twitter:</span
-												><a class="twitter" href="https://twitter.com/rkjain119"
-													>@rkjain119</a
-												>
-											</p>
-										</div>
-										<div class="single-info">
-											<i class="lni lni-map-marker"></i>
-											<p class="p-text"><span>Location:</span> Mumbai, India</p>
-										</div>
-									</div>
-								</div>
-							</li>
+				<div class="hero__social animate__animated animate__slideInUp">
+					<ul class="social animate__animated animate__slideInLeft">
+						<li><a href="https://twitter.com/rkjain119" target="_blank" rel="noreferrer"><i
+									class="bi bi-twitter"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/rushab-jain/" target="_blank" rel="noreferrer"><i
+									class="bi bi-linkedin"></i></a></li>
+						<li><a href="https://github.com/rkjain119" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Portfolio Section -->
+	<section class="section animate__animated animate__slideInUp" id="portfolio">
+		<div class="container">
+			<div class="section__header section__header--center">
+				<h2 class="section__title">Portfolio</h2>
+				<p class="section__subtitle">See my latest work</p>
+			</div>
+			<div class="portfolio">
+				<div class="portfolio__box">
+					<div class="portfolio__img"><img
+							src="https://devfolioio.s3.us-west-2.amazonaws.com/thumbnails/TqRfzmi9Zx3v5z6ZAO_-w.png"
+							alt="Portfolio Items"></div>
+					<div class="portfolio__info">
+						<h3 class="portfolio__title">Cascare Css</h3>
+						<p class="portfolio__content">CasCare.css is a light-weight and responsive extensible open source CSS
+							library built with Sass source code avalaibe at -https://github.com/rkjain119/CasCare</p><a
+							class="portfolio__link" target="_blank" rel="noreferrer" href="https://cascare.vercel.app/">See Work
+							<i class="bi bi-arrow-right"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="section__footer">
+				<a href="#contact">
+					See More Projects on Github
+					<i class="bi bi-arrow-right"></i>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- About Me Section -->
+	<section class="section" id="about">
+		<div class="container">
+			<div class="about">
+				<div class="about__left">
+					<div class="section__header">
+						<h2 class="section__title">About</h2>
+						<p class="section__subtitle">Few things about me</p>
+					</div>
+					<p class="about__bio"> I am a full stack web developer who is passionate about web development. I am currently
+						working as a Software Developer at <a href="https://exceptions.in/">Exceptions.in</a> . I have also worked
+						on various
+						projects in the past 1.6
+						years. I am a quick learner who enjoys experimenting with new technologies.
+					</p>
+					<h4 class="about__skillsTitle">Skills</h4>
+					<ul class="about__skillsList">
+						<li>html5</li>
+						<li>css</li>
+						<li>js</li>
+						<li>react</li>
+						<li>node.js</li>
+						<li>mongodb</li>
+						<li>express</li>
+						<li>aws</li>
+						<li>figma</li>
+						<li>nextjs</li>
+						<li>tailwindcss</li>
+					</ul>
+				</div>
+				<div class="about__right"><img src="/assets/avatar.png" alt="Profile Avatar"></div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Contact Section -->
+	<section class="section" id="contact">
+		<div class="container">
+			<div class="contact">
+				<div class="contact__left">
+					<div class="section__header">
+						<h2 class="section__title">Contact Me</h2>
+						<p class="section__subtitle">Reach out to me, 24/7</p>
+					</div>
+					<div class="contact__info">
+						<p>Email Me:</p><a href="mailto:rkjain119@gmail.com">rkjain119@gmail.com</a>
+					</div>
+					<div class="contact__info">
+						<p>Call Me:</p><a href="tel:7057407660">7057407660</a>
+					</div>
+					<div class="contact__info">
+						<p>Follow Me:</p>
+						<ul class="social animate__animated animate__slideInLeft">
+							<li><a href="https://twitter.com/rkjain119" target="_blank" rel="noreferrer"><i
+										class="bi bi-twitter"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/rushab-jain/" target="_blank" rel="noreferrer"><i
+										class="bi bi-linkedin"></i></a></li>
+							<li><a href="https://github.com/rkjain119" target="_blank" rel="noreferrer"><i
+										class="bi bi-github"></i></a></li>
 						</ul>
 					</div>
 				</div>
-			</section>
-
-			<section id="techstack" class="techstack-area">
-				<div class="container-techstack">
-					<div class="row-title">
-						<div>
-							<div class="techstack-title">
-								<h2 class="title">Tech Stack</h2>
-								<p>
-									Here are a few technologies I've been working with recently
-								</p>
-							</div>
-							<!-- section title -->
-						</div>
-					</div>
-					<!-- row -->
-					<div class="row">
-						<div class="col-lg-2 col-md-6 col-sm-8">
-							<div class="single-stack">
-								<div class="stack-icon">
-									<i class="lni lni-javascript"></i>
-								</div>
-								<div class="stack-content">
-									<h4><a id="stack-title" href="#">JavaScript</a></h4>
-								</div>
-							</div>
-							<!-- single service -->
-						</div>
-						<div class="col-lg-2 col-md-6 col-sm-8">
-							<div class="single-stack">
-								<div class="stack-icon">
-									<i class="lni lni-html5"></i>
-								</div>
-								<div class="stack-content">
-									<h4>
-										<a id="stack-title" href="#">HTML</a>
-									</h4>
-								</div>
-							</div>
-							<!-- single service -->
-						</div>
-						<div class="col-lg-2 col-md-6 col-sm-8">
-							<div class="single-stack">
-								<div class="stack-icon">
-									<i class="lni lni-css3"></i>
-								</div>
-								<div class="stack-content">
-									<h4><a id="stack-title" href="#">CSS & JSS</a></h4>
-								</div>
-							</div>
-							<!-- single service -->
-						</div>
-						<div class="col-lg-2 col-md-6 col-sm-8">
-							<div class="single-stack">
-								<div class="stack-icon">
-									<i class="lni lni-react"></i>
-								</div>
-								<div class="stack-content">
-									<h4>
-										<a id="stack-title" href="#">React</a>
-									</h4>
-								</div>
-							</div>
-							<!-- single service -->
-						</div>
-						<div class="col-lg-2 col-md-6 col-sm-8">
-							<div class="single-stack">
-								<div class="stack-icon">
-									<i class="lni lni-nodejs"></i>
-								</div>
-								<div class="stack-content">
-									<h4><a id="stack-title" href="#">Node.js</a></h4>
-								</div>
-							</div>
-							<!-- single service -->
-						</div>
-						<div class="col-lg-2 col-md-6 col-sm-8">
-							<div class="single-stack">
-								<div class="stack-icon">
-									<i class="lni lni-database"></i>
-								</div>
-								<div class="stack-content">
-									<h4>
-										<a id="stack-title" href="#">Mongodb</a>
-									</h4>
-								</div>
-							</div>
-							<!-- single service -->
-						</div>
-						<div class="col-lg-2 col-md-6 col-sm-8">
-							<div class="single-stack">
-								<div class="stack-icon">
-									<i class="lni lni-aws"></i>
-								</div>
-								<div class="stack-content">
-									<h4>
-										<a id="stack-title" href="#">AWS</a>
-									</h4>
-								</div>
-							</div>
-							<!-- single service -->
-						</div>
-					</div>
-					<!-- row -->
-				</div>
-				<!-- container -->
-			</section>
-
-			<section id="contact">
-				<div class="container-contact">
-					<div class="row-title">
-						<div>
-							<div class="contact-title">
-								<h2 class="title">Contact Me!</h2>
-								<p>
-									<strong
-										>Liked my portfolio? Here are my social handles!</strong
-									>
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="row-contact">
-						<div class="col-lg-2 col-md-6 col-sm-8">
-							<div class="single-contact">
-								<a
-									id="profile-link"
-									href="https://github.com/rkjain119"
-									target="_blank"
-								>
-									<div class="contact-icon">
-										<i class="lni lni-github-original"></i>
-									</div>
-									GitHub
-								</a>
-							</div>
-						</div>
-
-						<div class="col-lg-2 col-md-6 col-sm-8">
-							<div class="single-contact">
-								<a
-									id="profile-link"
-									href="https://www.linkedin.com/in/rushab-jain/"
-									target="_blank"
-								>
-									<div class="contact-icon">
-										<i class="lni lni-linkedin-original"></i>
-									</div>
-									Linkedin
-								</a>
-							</div>
-						</div>
-
-						<div class="-lg-2 colcol-md-6 col-sm-8">
-							<div class="single-contact">
-								<a
-									id="profile-link"
-									href="https://twitter.com/rkjain119"
-									target="_blank"
-								>
-									<div class="contact-icon">
-										<i class="lni lni-twitter-original"></i>
-									</div>
-									Twitter
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<div class="footer">
-				<p>
-					Designed and Developed by -<a href="https://www.rushab.in">Rushab</a>
-				</p>
+				<!-- <div class="contact__right">
+					<p class="contact__alert"></p>
+					<form class="contact__form">
+						<div class="contact__fields"><label for="name">Name</label><input type="name" name="name" id="name"
+								placeholder="Your Name" value=""></div>
+						<div class="contact__fields"><label for="email">Email</label><input type="email" name="email" id="email"
+								placeholder="Email Address" value=""></div>
+						<div class="contact__fields"><label for="message">Message</label><textarea name="message" id="message"
+								placeholder="Write Message..."></textarea></div>
+						<div class="contact__fields"><button class="btn btn--main" type="submit">Send Message <i
+									class="bi bi-arrow-right"></i></button></div>
+					</form>
+				</div> -->
 			</div>
-		</main>
-	</body>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__copyright">
+			<p>Made with &hearts; by <a href="https://rushab.in/">rushab.in</a></p>
+		</div>
+	</footer>
+
+	<!-- SplideJs v3 -->
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.1/dist/js/splide.min.js"></script>
+	<!-- Scroll Reveal -->
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<!-- App Scripts -->
+	<script src="scripts/app.js"></script>
+</body>
+
 </html>

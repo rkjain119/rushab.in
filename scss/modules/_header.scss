@@ -1,0 +1,210 @@
+.header {
+  padding: 0.5rem 0;
+  background-color: var(--color-black);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  & .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & > * {
+      flex-basis: 33.33%;
+    }
+  }
+
+  &__logo > a {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 5.6rem;
+    line-height: 1;
+    font-family: var(--font-special);
+    font-weight: var(--font-bold);
+		background-image:linear-gradient(90deg, #007CF0, #00DFD8);
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+
+    @include media-queries(atMedium) {
+      font-size: 3rem;
+    }
+  }
+
+  &__mobile {
+    display: none;
+		// width: 99%;
+
+
+    @include media-queries(atMediumLarge) {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__resume {
+    // display: flex;
+    // justify-content: flex-end;
+		padding:1.5rem 1.5rem;
+		position: relative;
+		display:inline-flex;
+		// border: 10px solid var(--color-text-gradient2);
+		border-radius: 0.7rem;
+		min-width: 120px;
+		min-height: 32px;
+    // @include media-queries(atMediumLarge) {
+    //   display: none;
+    // }
+  }
+	&__bg{
+			position: absolute;
+			top: 1px;
+			right: 1px;
+			bottom: 1px;
+			left: 1px;
+			border-radius: 0.7rem;
+			background: linear-gradient(-90deg, #007cf0, #00dfd8, #ff0080, #007cf0);
+			background-size: 400% 100%;
+			border: none;
+			padding: 0;
+			margin: 0;
+			animation: backgroundAnimation 8s ease-in-out infinite
+	}
+	&__bg:after {
+		content: "";
+		position: absolute;
+		background-size: inherit;
+		background-image: inherit;
+		-webkit-animation: inherit;
+		animation: inherit;
+		left: 0;
+		right: 0;
+		top: 2px;
+		height: 100%;
+		filter: blur(.5rem)
+	}
+
+
+	&__text{
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: black;
+			border-radius: 0.7rem;
+			display: flex;
+			justify-content: center;
+			align-items: center
+	}
+
+
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    opacity: 1;
+    pointer-events: all;
+
+    .btn {
+      // display: none;
+
+      @include media-queries(atMediumLarge) {
+        font-size: 2rem;
+        padding: 1.2rem 3.5rem;
+        display: block;
+      }
+    }
+
+    @include media-queries(atMediumLarge) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      min-height: 100vh;
+      background: var(--color-light);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    & > ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 5rem;
+
+      @include media-queries(atMediumLarge) {
+        flex-direction: column;
+        font-size: 2.4rem;
+        align-items: flex-start;
+      }
+
+      & > li {
+        position: relative;
+        @include media-queries(atMediumLarge) {
+          &::before {
+            display: inline-block;
+            position: absolute;
+            left: -3rem;
+            top: calc(50% - 3px);
+            content: "";
+            width: 1rem;
+            height: 3px;
+            background-color: var(--color-accent);
+          }
+        }
+
+        & > a {
+          text-decoration: none;
+          font-weight: var(--font-medium);
+        }
+      }
+    }
+
+    &.show {
+      opacity: 1;
+      pointer-events: all;
+      background-color: var(--color-black);
+    }
+  }
+
+  #navigation-button {
+    @include media-queries(atMediumLarge) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 4.2rem;
+      width: 4.2rem;
+      cursor: pointer;
+      font-size: 2.4rem;
+      line-height: 0;
+      // border-radius: 50%;
+      position: relative;
+      z-index: 999;
+      outline-color: transparent;
+      border: none;
+      background-color: var(--color-text-gradient);
+    }
+
+    @include media-queries(atMedium) {
+      font-size: 2rem;
+    }
+  }
+}
+
+@keyframes backgroundAnimation {
+	50% {
+		background-position: 140% 50%;
+		transform: skew(-2deg)
+	}
+}
