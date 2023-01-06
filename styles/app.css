@@ -395,7 +395,8 @@ img {
         width: 50%; }
       .portfolio__box:nth-child(1) .portfolio__link, .portfolio__box:nth-child(4) .portfolio__link {
         color: var(--color-accent);
-        border-color: var(--color-accent); }
+        border-color: var(--color-accent);
+        margin-right: 3rem; }
       @media only screen and (max-width: 900px) {
         .portfolio__box:nth-child(1), .portfolio__box:nth-child(4) {
           flex-direction: column; }
@@ -434,7 +435,8 @@ img {
         color: var(--color-darkest);
         border-color: var(--color-darkest);
         display: inline-block;
-        margin-bottom: 4rem; }
+        margin-bottom: 4rem;
+        margin-right: 3rem; }
     .portfolio__box:nth-child(3) {
       background-color: var(--color-tomato); }
     .portfolio__box:nth-child(4) {
